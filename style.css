@@ -1,0 +1,218 @@
+body {
+    color: #fff;
+    overflow-x: hidden;
+    height: 80%;
+    background-image: linear-gradient(45deg,#3c3d45,#21232d ,#a0642c, #151322,#a0642c,#488aab,#a0642c);
+    background-repeat: no-repeat
+}
+
+.card0 {
+    width: 90%;
+    min-height: 100vh;
+    background-image: url(image/day/michael-diane-weidner-h-rP5KSC2W0-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    transition: 500ms;
+    opacity: 1;
+
+}
+.wdata{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2em 3em 4em 3em;
+}
+.card1 {
+    /* background-image: linear-gradient(#2196F3, #81D4FA); */
+    padding: 30px 20px 30px 50px;
+
+
+}
+.card1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.image {
+    width: 300px;
+    height: 300px
+}
+
+.large-font {
+    font-size: 70px;
+    font-family: Arial
+}
+
+
+
+.card2 {
+    background-color: #607D8B;
+    padding: 0px 0px 40px 40px;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 
+                0 8px 32px 0
+                rgba(0, 0, 0, 0.3) ;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    border: 
+        1px solid
+        rgba(255, 255, 255, 0.18);
+        z-index: 1;
+        padding: 3em 2em;
+}
+@media screen and (max-width:800px){
+    .card1, .card2{
+        position: relative;
+        width: 100%;
+        top: initial;
+        height: 40em;
+    }
+}
+
+@media screen and (max-width:500px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-height:300px) {
+    .card0{
+        min-height: 40em;
+    }    
+}
+
+input {
+    background-color: #607D8B;
+    padding: 24px 0px 12px 0px !important;
+    width: 80%;
+    box-sizing: border-box;
+    border: none !important;
+    border-bottom: 1px solid #CFD8DC !important;
+    font-size: 16px !important;
+    color: #fff !important
+}
+
+input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #fff !important;
+    outline-width: 0;
+    font-weight: 400
+}
+
+::placeholder {
+    color: #B0BEC5 !important;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #B0BEC5 !important
+}
+
+::-ms-input-placeholder {
+    color: #B0BEC5 !important
+}
+
+/* .fa-search {
+    color: #607D8B;
+    background-color: #E1F5FE;
+    font-size: 20px;
+    padding: 20px;
+    width: 20%;
+    cursor: pointer
+} */
+
+.light-text {
+    color: #B0BEC5
+}
+
+.suggestion:hover {
+    color: #fff;
+    cursor: pointer
+}
+
+.line {
+    height: 1px;
+    background-color: #B0BEC5
+}
+
+@media screen and (max-width: 500px) {
+    .card1 {
+        padding-left: 26px
+    }
+}.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    /* border: 0;
+    outline: 0;
+    background: #7c8e97;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: content;
+    margin-right: 16px;
+    font-size: 18px; */
+
+    background: none;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding:  0 1em 0.5em 0;
+    width: 80%;
+    color: #fff;
+    font-size: 1.1em;
+}
+.search:focus{
+    outline: none;
+}
+.search input ::placeholder
+{
+    color: #ccc;
+}
+
+.search button {
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5em;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: #fa6b1b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+.search button i{
+    font-size: 30px;
+}
+.search button:hover{
+    background: #fff;
+    color: #000;
+}
